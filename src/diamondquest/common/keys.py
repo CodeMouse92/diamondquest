@@ -44,9 +44,16 @@ import pygame.locals as KEYS
 
 class Key:
     arrows = (KEYS.K_UP, KEYS.K_DOWN, KEYS.K_LEFT, KEYS.K_RIGHT)
+	tools = (KEYS.K_SPACE, KEYS.K_p, KEYS.K_a, KEYS.K_d, KEYS.K_t)
 
     @classmethod
     def in_arrows(cls, event):
         if event in cls.arrows:
             return True
         return False
+	
+	@classmethod
+	def in_tools(cls, event):
+		if event in cls.tools:
+			return True
+		return False
