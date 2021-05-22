@@ -72,6 +72,37 @@ class PlayerController:
                     GameModel.mode = ModeType.JOURNAL
                     Window.show_view(ModeType.JOURNAL)
 
+				# Select Tools (Hand, Pickaxe, Pickaxe, Drill, TNT)
+				elif action == KEYS.K_SPACE:
+					logger.debug(
+                        "PlayerController: process_action - Switch tool to hand"
+                    )
+					player.select_tool(ToolType.HAND)
+				
+				elif action == KEYS.K_p:
+					logger.debug(
+                        "PlayerController: process_action - Switch tool to Pickaxe"
+                    )
+					player.select_tool(ToolType.PICKAXE)
+				
+				elif action == KEYS.K_a:
+					logger.debug(
+                        "PlayerController: process_action - Switch tool to Pickaxe"
+                    )
+					player.select_tool(ToolType.PICKAXE)
+
+				elif action == KEYS.K_d:
+					logger.debug(
+                        "PlayerController: process_action - Switch tool to drill"
+                    )
+					player.select_tool(ToolType.DRILL)
+				
+				elif action == KEYS.K_t:
+					logger.debug(
+                        "PlayerController: process_action - Switch tool to TNT"
+                    )
+					player.select_tool(ToolType.TNT)
+
                 # Handling arrows here
                 # They are put back in front in case arrows are held down
                 elif action == KEYS.K_UP:

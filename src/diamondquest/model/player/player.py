@@ -156,6 +156,16 @@ class PlayerModel:
             self._location = original_location
         return False
 
+    def select_tool(tool):
+		self.tool = tool
+		if tool == ToolType.HAND:
+			pass
+		elif tool == ToolType.PICKAXE:
+			pass
+		elif tool == ToolType.TNT:
+			pass
+		elif tool == ToolType.DRILL:
+			pass
 
 '''
     @property.getter

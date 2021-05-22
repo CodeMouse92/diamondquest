@@ -59,6 +59,11 @@ KNOWN_KEYS = [
     KEYS.K_ESCAPE,
     KEYS.K_j,
     KEYS.K_RETURN,
+	KEYS.K_SPACE,
+	KEYS.K_p,
+	KEYS.K_a,
+	KEYS.K_d,
+	KEYS.K_t,
 ]
 
 
